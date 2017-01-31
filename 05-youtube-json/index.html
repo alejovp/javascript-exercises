@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSON exercise</title>
+</head>
+<body>
+  <h1 id="videoTitle"></h1>
+  <div>
+    <a href="" class="thumbnail">
+      <img>
+    </a>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+  </script>
+  <script>
+    $.ajax({
+      url: 'material/youtube.json'
+    })
+    .done(function(response){
+      var vidTitle = response.data.items[0].title
+      var vidThumb = response.data.items[0].thumbnail.hqDefault
+      var vidLink = response.data.items[0].player.default
+      $('#videoTitle').html(vidTitle)
+      $('img').attr('src', vidThumb)
+      $('a').attr('href', vidLink)
+      // Check the object
+      // console.log(response)
+    })
+  </script>
+</body>
+</html>
