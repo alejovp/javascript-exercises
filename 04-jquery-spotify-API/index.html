@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify finder 2</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+      .jumbotron h3 { text-align: center; }
+      .row > div { 
+        border-bottom: 10px solid white;
+        padding-bottom: 10px;
+       }
+      .row div:last-child { 
+        border-bottom: none;
+       }
+       .jumbotron.container {
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">Spotify Finder 😎</h3>
+        </div>
+        <div class="jumbotron container" id="search-artists">
+            <h3>What do you want to listen now...</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Find an Artist:</h4>
+                <form  action="" method="POST" class="form-inline" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="searchArtist" placeholder="Write an artist name...">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+              </div>
+              <div id="select-artist" class="col-md-6">
+                <h4>Select an Artist:</h4>
+                <form action="" method="POST" class="form-inline" role="form">
+                  <div class="form-group">
+                    <select name="" id="list-artists"></select>
+                  </div> 
+                </form>
+              </div>
+              <div id="select-album" class="col-md-6">
+                <h4>Select an Album:</h4>
+                <form action="" method="POST" class="form-inline" role="form">
+                  <div class="form-group">
+                    <select name="" id="list-albums"></select>
+                  </div> 
+                </form>
+              </div>
+              <div class="col-md-12">
+                <h4>Select a track:</h4>
+                <ul id="list-tracks"></ul>
+              </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2016 Company, Inc.</p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <!-- Latest compiled and minified JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

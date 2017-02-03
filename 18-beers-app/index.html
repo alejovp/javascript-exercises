@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beers App</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Beers Finder</a>
+      </div>
+    </div>  
+  </nav>
+  <main class="container text-center" >
+    <div class="row">
+      <div id="beer-search" class="col-md-12">
+          <div class="input-group">
+            <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Search</button>
+            </span>
+            <input type="text" class="form-control" placeholder="Write your beer name here...">
+          </div>
+          <!-- /input-group -->
+      </div>   
+    </div>
+    <div id="img-box" class="row hidden">
+      <div class="col-sm-6"></div>   
+    </div>
+    <div id="result-box" class="row hidden">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+    </div>
+    <div id="intro-box" class="row">
+      <div class="col-md-6">
+        <h1>Beers Finder</h1>
+      </div>   
+    </div>
+    <div class="row">
+      <div id="beer-display" class=""></div>   
+    </div>
+  </main>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <!-- Latest compiled and minified JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="beers-finder.js"></script>
+</body>
+</html>

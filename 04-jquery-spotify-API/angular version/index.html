@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="spotifyApp">
+<head>
+  <meta charset="UTF-8">
+  <title>SopotyApp Angular</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+<body>
+  <div class="container">
+  <h1>Spotify Finder Angular</h1>
+    <div class="jumbotron" ng-controller="searchController">
+      <h2>Search an Artist...</h2>
+      <form action="" method="POST" role="form">
+        <div class="form-group">
+          <input ng-model="search" type="text" class="form-control" id="" placeholder="Input field">
+        </div>
+        <button ng-click="searchArtist($event)" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  
+
+  </div>
+  
+
+
+  <script src="app.js" ></script>
+</body>
+</html>
