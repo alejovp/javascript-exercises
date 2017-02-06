@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="movieApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Movies</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">Movie Collection</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#/">Popular Movies</a></li>
+          <li><a href="#/upcoming">Upcoming Movies</a></li>
+          <li><a href="#/nowPlaying">Now Playing Movies</a></li>
+          <li><a href="#/topRated">Top Rated Movies</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <main ng-view></main>
+  </div>
+  <!-- Latest compiled and minified JS -->
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <script src="js/factory.js"></script>
+  <script src="js/popular/popularController.js"></script>
+  <script src="js/upcoming/upcomingcontroller.js"></script>
+  <script src="js/toprated/topRatedController.js"></script>
+  <script src="js/nowplaying/nowPlayingController.js"></script>
+  <script src="js/config.js"></script>
+</body>
+</html>

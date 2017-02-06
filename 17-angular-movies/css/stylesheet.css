@@ -1,0 +1,39 @@
+/* line 1, /Users/zoraidamoreno/Alejandro/SkyLabCoders/projects/javascript-exercises/17-angular-movies/sass/stylesheet.scss */
+body > div.container {
+  padding-top: 70px;
+}
+
+/* line 4, /Users/zoraidamoreno/Alejandro/SkyLabCoders/projects/javascript-exercises/17-angular-movies/sass/stylesheet.scss */
+body > div.container h2 {
+  padding-left: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* line 13, /Users/zoraidamoreno/Alejandro/SkyLabCoders/projects/javascript-exercises/17-angular-movies/sass/stylesheet.scss */
+#info-display p {
+  text-align: center;
+  font-weight: 400;
+}
+
+/* line 17, /Users/zoraidamoreno/Alejandro/SkyLabCoders/projects/javascript-exercises/17-angular-movies/sass/stylesheet.scss */
+#info-display p span {
+  font-weight: 600;
+}
+
+/* line 24, /Users/zoraidamoreno/Alejandro/SkyLabCoders/projects/javascript-exercises/17-angular-movies/sass/stylesheet.scss */
+#search-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 31, /Users/zoraidamoreno/Alejandro/SkyLabCoders/projects/javascript-exercises/17-angular-movies/sass/stylesheet.scss */
+#movies-display {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=../css/stylesheet.map */

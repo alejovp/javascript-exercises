@@ -1,0 +1,37 @@
+body > div.container {
+  padding-top: 70px;
+
+  h2 {
+  padding-left: 15px;
+  margin-top: 10px;
+  text-align: center;
+  }
+
+}
+
+#info-display {
+  p {
+    text-align: center;
+    font-weight: 400;
+    
+    span {
+      font-weight: 600;
+    }
+  }
+  
+}
+
+#search-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#movies-display {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
